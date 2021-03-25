@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase1_project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h2>Header</h2>
+        </div>
+
+        <!-- <div class="navigation">
+            <h3>Nav bar</h3>
+        </div> -->
+
+        <div class="main">
+            <p>
+            <h2>MERRIAM-WEBSTER'S MEDICAL DICTIONARY </h2>
+            <form id="dictionaryForm"
+                action="https://www.dictionaryapi.com/api/v3/references/medical/json/doctor?key=your-api-key">
+                <p>
+                    <label for="definition">Definitions: </label>
+                    <input type="text" id="definition">
+                </p>
+                <p>
+                    <label for="symbols">Pronunciation symbols: </label>
+                    <input type="text" id="symbols">
+                </p>
+                <p>
+                    <label for="spelling">Spelling suggestions: </label>
+                    <input type="text" id="spelling">
+                </p>
+                <p>
+                    <button class="submit">Submit</button>
+                </p>
+
+            </form>
+
+            </p>
+        </div>
+
+        <div class="footer">
+            <h3>Footer</h3>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
