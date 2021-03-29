@@ -15,44 +15,58 @@
     <div class="container">
 
         <div class="header">
-            <h2>Header</h2>
+            <h2>WELCOME TO NEWS API</h2>
         </div>
-
-        <!-- <div class="navigation">
-            <h3>Nav bar</h3>
-        </div> -->
-
-        <div class="main">
+        <div class="nav">
             <p>
-            <h2>MERRIAM-WEBSTER'S MEDICAL DICTIONARY </h2>
-            <form id="dictionaryForm"
-                action="https://www.dictionaryapi.com/api/v3/references/medical/json/doctor?key=your-api-key">
+            <h3>Perform Your News Search Using The Following Options: </h3>
+            <form id="newsForm">
                 <p>
-                    <label for="definition">Definitions: </label>
-                    <input type="text" id="definition">
+                    <label for="keyword">Insert your keyword or phrases here: </label>
+                    <input type="text" id="keyword">
                 </p>
+
                 <p>
-                    <label for="symbols">Pronunciation symbols: </label>
-                    <input type="text" id="symbols">
+                    <label for="date_from">Date From: </label>
+                    <input type="date" id="date_from">
                 </p>
+
                 <p>
-                    <label for="spelling">Spelling suggestions: </label>
-                    <input type="text" id="spelling">
+                    <label for="date_to">Date To: </label>
+                    <input type="date" id="date_to">
                 </p>
+
+                <p>
+                    <label for="domains">Search Domains: </label>
+                    <input type="text" id="domains" placeholder="eg bbc.co.uk">
+                </p>
+
                 <p>
                     <button class="submit">Submit</button>
                 </p>
-
             </form>
-
             </p>
+            
+        </div>
+
+        <div class="main">
+            <h2>Search Results: </h2>
+            <p id="display"></p>
+            
         </div>
 
         <div class="footer">
-            <h3>Footer</h3>
+            <h3>Created by:</h3>
+            <div id="name">
+                Haven Eldebaque 
+            </div>
+            <div id="email">
+                Email: <a href="mailto:haven.eldebaque@gmail.com">haven.eldebaque@gmail.com</a>
+            </div>
+
         </div>
     </div>
     <script type="text/javascript" src="index.js"></script>
 </body>
-
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 </html>
