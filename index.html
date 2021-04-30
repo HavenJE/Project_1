@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -23,42 +25,54 @@
             <form id="newsForm">
                 <p>
                     <label for="keyword">Insert your keyword or phrases here: </label>
-                    <input type="text" id="keyword">
+                    <input type="text" id="keyword" name="keyword">
                 </p>
 
                 <p>
                     <label for="date_from">Date From: </label>
-                    <input type="date" id="date_from">
+                    <input type="date" id="date_from" name="date_from">
                 </p>
 
                 <p>
                     <label for="date_to">Date To: </label>
-                    <input type="date" id="date_to">
+                    <input type="date" id="date_to" name="date_to">
                 </p>
 
                 <p>
                     <label for="domains">Search Domains: </label>
-                    <input type="text" id="domains" placeholder="eg bbc.co.uk">
+                    <input type="text" id="domains" name="domains" placeholder="eg bbc.co.uk">
                 </p>
 
                 <p>
-                    <button class="submit">Submit</button>
+                    <button id="submitbutton" name="submitbutton">Submit</button>
                 </p>
             </form>
+
+            <p>
+                <button id="clear" name="clear">Clear Your Search</button>
             </p>
-            
+
+            </p>
+
         </div>
 
         <div class="main">
             <h2>Search Results: </h2>
-            <p id="display"></p>
-            
+            <div id="display">
+                <ol id="searchResult"></ol>
+            </div>
+        </div>
+
+        <div class="articlesCards">
+            <div class="card">
+                <img src="${article.url}" alt="">
+            </div>
         </div>
 
         <div class="footer">
             <h3>Created by:</h3>
             <div id="name">
-                Haven Eldebaque 
+                Haven Eldebaque
             </div>
             <div id="email">
                 Email: <a href="mailto:haven.eldebaque@gmail.com">haven.eldebaque@gmail.com</a>
