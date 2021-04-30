@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
-
-
+    
 </head>
 
 <body>
@@ -27,35 +26,34 @@
                     <label for="keyword">Insert your keyword or phrases here: </label>
                     <input type="text" id="keyword" name="keyword">
                 </p>
-
                 <p>
                     <label for="date_from">Date From: </label>
                     <input type="date" id="date_from" name="date_from">
                 </p>
-
                 <p>
                     <label for="date_to">Date To: </label>
                     <input type="date" id="date_to" name="date_to">
                 </p>
-
                 <p>
                     <label for="domains">Search Domains: </label>
                     <input type="text" id="domains" name="domains" placeholder="eg bbc.co.uk">
                 </p>
-
                 <p>
                     <button id="submitbutton" name="submitbutton">Submit</button>
                 </p>
             </form>
-
             <p>
                 <button id="clear" name="clear">Clear Your Search</button>
             </p>
-
             </p>
 
-        </div>
+            <div class="modal-bg">
+                <div class="modal">
+                    <p>Article Content</p>
+                </div>
+            </div>
 
+        </div>
         <div class="main">
             <h2>Search Results: </h2>
             <div id="display">
@@ -80,6 +78,7 @@
 
         </div>
     </div>
+
     <script type="text/javascript" src="index.js"></script>
 </body>
 
